@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        h1{
+            background-color: black;
+        }
+        h2{
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="form.html">Register<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="awareness.html">Awareness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="help.html">Help</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    <!-- <nav class="navbar navbar-dark bg-primary"> -->
+        <!-- Navbar content -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark"> -->
+            <!-- <a class="navbar-brand" href="home.html">Home</a> -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+              <!-- <ul class="navbar-nav"> -->
+                <!-- <li class="nav-item active"> -->
+                  <!-- <a class="nav-link" href="form.html">Register<span class="sr-only">(current)</span></a> -->
+                <!-- </li> -->
+                <!-- <li class="nav-item"> -->
+                  <!-- <a class="nav-link" href="awareness.html">Awareness</a> -->
+                <!-- </li> -->
+                <!-- <li class="nav-item"> -->
+                  <!-- <a class="nav-link" href="articles.html">Articles</a> -->
+                <!-- </li> -->
+                <!-- <li class="nav-item"> -->
+                  <!-- <a class="nav-link " href="help.html">Help</a> -->
+                <!-- </li> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          <!-- </nav> -->
+      <!-- </nav> -->
+   
+    <form action="connect.php" method="POST">
+        <h1 style="color: lightblue;">Registration form</h1>
+
+        <h2>Personal Info</h2>
+        <p>First Name: * <input type="text" name="first name" required></p>
+        <p>Last Name: * <input type="text" name="last name" required></p>
+        <p>
+            Date of birth: <input type="date" name="dob_date" id="dob_date">
+        </p>
+        <p>Age: * <input type="text" name="age" id="age" required></p>
+        <br>
+        <fieldset>
+            <legend>Gender *</legend>
+        <p>Male <input type="radio" name="gender" id="male" required></p>
+        <p>Female <input type="radio" name="gender" id="female" required></p>
+    </fieldset>
+    <p>Blood Group: * <input type="text" name="blood group" id="blood group" required></p>
+    <p>Mobiile Number: * <input type="number" name="number" id="number"required></p>
+    <p>Aadhar card number: * <input type="number" name="card" id="card" required></p>
+    <p>City: <input type="text" name="city" id="city"></p>
+    <p>Address: <textarea name="address" id="address" cols="100" rows="10"></textarea></p>
+    <p>Email: <input type="email" name="email" id="email"></p>
+    <p>Early vaccintion:
+        <select name="vaccine_type" id="vaccine_type">
+        <option value="">--Select a vaccine type--</option>
+        <option value="typhoid">typhoid</option>
+        <option value="tuberculosis">tuberculosis</option>
+        <option value="chicken pox">chicken pox</option>
+        <option value="polio">polio</option>
+   </select>
+   <p>
+       Date for vaccination: * <input type="date" name="dfc_date" id="dfc_date" required>
+   </p>
+        
+    </p>
+    <input type="submit" value="Register">
+    </form>
+    
+</body>
+</html>
